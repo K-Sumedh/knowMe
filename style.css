@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Sofia');
-
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 :root{
     --yellow:#f9ca24;
+    --yellow:#54c3e8;
 }
 
 *{
-    font-family: 'Sofia', sans-serif;
+    font-family: 'Cutive Mono', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     text-decoration: none;
@@ -29,11 +30,13 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background:#222;
+      box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
 }
 
 html::-webkit-scrollbar-thumb{
     background:var(--yellow);
+  border-radius: 10px;
 }
 
 body{
@@ -80,7 +83,7 @@ section{
 }
 
 header{
-    min-height: 60vh;
+    min-height: 80vh;
     position: fixed;
     top:0; left:0;
     z-index: 1000;
@@ -93,19 +96,19 @@ header{
     flex-flow: column;
     text-align: center;
     overflow-y: hidden;
+     padding-top: 30px;
 }
 
 header .user img{
     height:17rem;
     width:17rem;
-    border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border-radius: 15%;
+    border:.3rem solid var(--yellow);
 }
 
 header .user .name{
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     color:#fff;
 }
 
@@ -251,8 +254,21 @@ header .navbar ul li a:hover{
     color:#fff;
     border-radius: 5rem;
     padding:.5rem 2.5rem;
+ 
 }
 
+.skills span {
+    width:10rem;
+    top:2rem;
+    width: 5rem;
+    font-size: 2rem;
+    background:#222;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+       column-count: 4;
+       position:relative;    
+}
 .education .box-container .box h3{
     font-size: 2rem;
     color:#fff;
