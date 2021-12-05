@@ -13,7 +13,20 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<script>
+var i = 0;
+var txt = 'Hi There!';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("hi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<body onload="typeWriter()">
     
 <!-- header section starts  -->
 
@@ -50,8 +63,10 @@
 <br><br>
 <section class="home" id="home">
 
-    <h3>HI THERE !</h3>
-    <h1>I'M <span>Sumedh Kamble</span></h1>
+    <h3 id="hi"></h3>
+
+    <h1 id="name">I'M <span>Sumedh Kamble</span></h1>
+ 
     <p>Innovative Software Engineer with expertise in C /C++ programming and
 Windows programming. Offering 2.5 years of overall experience and proficient
 
@@ -118,7 +133,7 @@ my knowledge and utilizing my skills towards the growth of the organization</p>
         <i class="fas fa-graduation-cap"></i>
         <span>2021-2023</span>
         <h3>M.Tech in Computer Science and Engineering(Information Security)</h3>
-        <p>National Insititue of Technology, Surathkal, Karnataka.
+        <p style="color:var(--yellow);">National Insititue of Technology, Surathkal, Karnataka.
         <p>CGPA: 7.42</p>
     </div>
 
@@ -126,7 +141,7 @@ my knowledge and utilizing my skills towards the growth of the organization</p>
         <i class="fas fa-graduation-cap"></i>
         <span>2015-2019</span>
         <h3>B.Tech in Information Technology</h3>
-        <p>Vishwakarma Institute of Technology, une.</p>
+        <p style="color:var(--yellow);">Vishwakarma Institute of Technology, Pune.</p>
         <p>CGPA: 7.42</p>
     </div>
 
@@ -237,6 +252,7 @@ my knowledge and utilizing my skills towards the growth of the organization</p>
         <span  style="color:var(--yellow);">Install4j</span>
     </div>
 </div>
+<br><br><br><br><br>
 <div class="box-container">
     <div class="skills">
         <span  style="color:var(--yellow);">Django</span>
