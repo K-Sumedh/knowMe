@@ -1,3 +1,328 @@
+<<<<<<< HEAD
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumedh Kamble</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<script>
+var i = 0;
+var txt = 'Hi There!';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("hi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<body onload="typeWriter()">
+    
+<!-- header section starts  -->
+
+<header>
+<a href="#home">
+    <div class="user">
+        <img src="photo.jpg" alt="">
+        <h3 class="name">Sumedh Kamble</h3>
+        <p class="post">Software Engineer</p>
+        <p class="post">M.Tech CSE(Information security)</p>
+        <p class="post">NITK, Surathkal</p>
+    </div> 
+</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#work">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+<br><br>
+<section class="home" id="home">
+
+    <h3 id="hi"></h3>
+
+    <h1 id="name">I'M <span>Sumedh Kamble</span></h1>
+ 
+    <p>Innovative Software Engineer with expertise in C /C++ programming and
+Windows programming. Offering 2.5 years of overall experience and proficient
+
+in full software development lifecycle. Quick learner and master new technolo-
+gies, working in both team and self-directed environment. True team player
+
+with strengths in adaptability and accuracy.Want to pursue a challenging ca-
+reer and be a part of progressive organization that gives a scope to enhance
+
+my knowledge and utilizing my skills towards the growth of the organization</p>
+    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>about</span> me </h1>
+
+<div class="row">
+
+    <div class="info">
+        <h3> <span> name : </span> Sumedh Kamble</h3>
+        <h3> <span> age : </span> 24 </h3>
+        <h3> <span> qualification : </span> M.Tech (CSIS)</h3>
+        <h3> <span> College : </span> NITK, Surathkal.</h3>
+        <h3> <span> post : </span>Software Engineer</h3>
+        <h3> <span> language : </span> English, Hindi, Marathi </h3>
+        <a href="https://drive.google.com/file/d/1Y8zr7mvGNIWLuTv0eAKs5LEFRxJiYSIl/view?usp=sharing/cv.pdf" download="cv.pdf"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+    </div>
+
+    <div class="counter">
+
+        <div class="box">
+            <span>2+</span>
+            <h3>years of experience</h3>
+        </div>
+        <div class="box">
+            <span>CGPA</span>
+            <h3>7.42</h3>
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<h1 class="heading"> my <span>education</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021-2023</span>
+        <h3>M.Tech in Computer Science and Engineering(Information Security)</h3>
+        <p style="color:var(--yellow);">National Insititue of Technology, Surathkal, Karnataka.
+        <p>CGPA: 7.42</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2015-2019</span>
+        <h3>B.Tech in Information Technology</h3>
+        <p style="color:var(--yellow);">Vishwakarma Institute of Technology, Pune.</p>
+        <p>CGPA: 7.42</p>
+    </div>
+
+
+   
+</div>
+
+</section>
+
+<!-- education section ends -->
+
+<!-- work section starts  -->
+
+<section class="education" id="work">
+
+<h1 class="heading">Work<span> Experience</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="  fa fa-briefcase"></i>
+        <span>2019-2021</span>
+        <h3 >Software Engineer II</h3>
+        <p style="color:var(--yellow);">Quickheal Technologies ltd. , Pune</p>
+        <ul>
+            <li>Developed windows service and multithreaded scheduler for ETH.</li>
+            <li>Designed and developed installer using install4j for the same.
+            <li>Analysis, implementation, scaling (25k clients) of various messaging queues for
+            client-server communication.</li>
+            <li>Solely responsible for designing (as per designed received from UI/UX team)
+            and developing installer for ETH using Install4j.</li>
+            <li>Worked on client side for the action (delete/quarantine) workflow from ETH
+            server-> Client Agent -> AV and back to ETH server.</li>
+            <li>Designed/ Developed and owned Windows Service(server) and a multithreaded
+            scheduler (for deletion of unwanted reports/tables from database).</li>
+            <li>Automating functional Testing using Python, AutoIT and selenium.</li>
+            <li>Designed and developed multithreaded “Advanced logging module” to collect
+            logs from clients.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <i class="  fa fa-briefcase"></i>
+        <span>Aug 2018 - Dec 2018</span>
+        <h3 >Research and Development Intern</h3>
+        <p style="color:var(--yellow);">Quickheal Technologies ltd. , Pune</p>
+        <ul>
+            <li>Designed/Developed a module detecting sensitive data in files using regular
+            expression using C/C++, SQLite database.It optmized the detection considerably.</li>
+            <li>Developed a MFC tool for the same to update regular expression as and when required to speed up the development as per requirements.</li>
+            <li>Analysis for tagging of files for classification using Alternate Data Streams which is used for File fingerprinting and partial scanning.</li>
+        </ul>
+    </div>
+
+</div>
+
+</section>
+
+<!-- work section ends -->
+
+<!-- Projects section -->
+<section class="education" id="projects">
+
+<h1 class="heading"><span>Projects</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-laptop"></i>
+        <h3 style="color:var(--yellow);">Stock Portfolio Dashboard</h3>
+        <p>Developed a web-app server which would act as a one stop solution to view, analyze, add equities to portfolio.
+            Multiple clients can login and can work simultaneously.Market research can be done using live data as per NSE.
+            <br><mark style="color:var(--yellow); background: none">Technologies:</mark> Python, Django framework, SQLite, nsetools(library to pull live data from NSE site.)
+        </p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-laptop"></i>
+        <h3 style="color:var(--yellow);">Scanning Partial scanning of files for confidential data and its fingerprinting</h3>
+        <p>Scanning for confidential data in various files.These files will then be classifed.
+         Its fingerprint(classification and other metadata) will then be saved to its ADS.
+         This fingerprint can then be used for partial scanning to increase the throughput.Scanning techniques include Regular Expression, Keyword search,etc.<br>
+         <mark style="color:var(--yellow); background: none">Technologies:</mark> Python, SQLite, Regular expression.
+        </p>
+    </div>
+
+
+</div>
+</section>
+<!-- Projects section ends  -->
+<section class="education" id="skills">
+
+<h1 class="heading">My <span>Skills</span> </h1>
+
+<div class="box-container">
+
+    <div class="skills">
+        <span  style="color:var(--yellow);">C/C++</span>
+    </div>
+    <div class="skills">
+        <span  style="color:var(--yellow);">Python</span>
+    </div>
+
+    <div class="skills">
+        <span  style="color:var(--yellow);">Win32 APIs</span>
+    </div>
+        <div class="skills">
+        <span  style="color:var(--yellow);">Install4j</span>
+    </div>
+</div>
+<br><br><br><br><br>
+<div class="box-container">
+    <div class="skills">
+        <span  style="color:var(--yellow);">Django</span>
+    </div>
+    <div class="skills">
+        <span  style="color:var(--yellow);">Jira/Confluence</span>
+    </div>
+
+    <div class="skills">
+        <span  style="color:var(--yellow);">SVN/GIT</span>
+    </div>
+        <div class="skills">
+        <span  style="color:var(--yellow);">SQL</span>
+    </div>
+</div>
+
+</section>
+<!-- contact section starts  -->
+
+<section class="contact" id="contact" align-content: center;>
+
+<h1 class="heading"> <span>contact</span> me </h1>
+
+<div class="row">
+
+    <div class="content">
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> sumedhkamble0@gmail.com </h3>
+            <h3> <i class="fas fa-phone"></i> 8237118328</h3>
+            <h3> <i class="fas fa-map-marker-alt"></i>India</h3>
+             <h3><a href="https://www.linkedin.com/in/sumedhkamble/" target="_blank"> <i class="fa fa-linkedin-square"></i>sumedhkamble</h3>
+            <h3><a href="https://github.com/K-Sumedh" target="_blank"> <i class="fa fa-github"></i>K-Sumedh</h3>
+        </div>
+
+    </div>
+
+    <!--<form action="">
+
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="text" placeholder="project" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+    </form> -->
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+
+</body>
+=======
 
 <!DOCTYPE html>
 <html lang="en">
@@ -305,4 +630,5 @@ my knowledge and utilizing my skills towards the growth of the organization</p>
 
 
 </body>
+>>>>>>> af5a28d0f7cb5adf2327e28ec0ac0c354eda4fc6
 </html>
