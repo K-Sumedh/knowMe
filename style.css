@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Sofia');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trirong"');
 :root{
     --yellow:#f9ca24;
     --yellow:#54c3e8;
@@ -7,6 +8,7 @@
 
 *{
     font-family: 'Sofia', sans-serif;
+   
     margin:0; padding:0;
     box-sizing: border-box;
     text-decoration: none;
